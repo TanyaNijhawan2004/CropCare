@@ -4,6 +4,7 @@
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
     "connect-mongodb-session": "^3.1.1",
+    "dotenv": "^16.3.1",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "express-session": "^1.17.3",
@@ -11,5 +12,22 @@
     "mongoose": "^7.2.2",
     "node": "^20.2.0",
     "nodemon": "^2.0.22"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "cropcare",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aavishkar-Kolte/Yantra.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aavishkar-Kolte/Yantra/issues"
+  },
+  "homepage": "https://github.com/Aavishkar-Kolte/Yantra#readme",
+  "description": ""
 }

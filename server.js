@@ -4,6 +4,9 @@ const session = require('express-session');
 const bcrypt = require('bcryptjs');
 const MongoDBStore = require('connect-mongodb-session')(session);
 const mongoose = require('mongoose');
+//.env monogourl
+require('dotenv').config();
+const mongoURI = process.env.MONGO_URL;
 
 const app = express();
 const bodyParser = require('body-parser');
@@ -14,7 +17,6 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-const mongoURI = 'mongodb://127.0.0.1:27017/yantra';
 mongoose.connect(mongoURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
